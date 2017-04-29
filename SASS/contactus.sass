@@ -1,0 +1,818 @@
+@import gridlayout.sass
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	border: 0 
+a 
+	text-decoration: none
+body 
+	border: 0
+	font-family: 'Montserrat', sans-serif;
+	position: relative
+	z-index: 2
+
+
+header
+	height: 95px 
+	// border: 1px solid black
+	position: relative
+
+#header-background
+	position: absolute
+	height: 100%
+	z-index: 2
+	background-color: #254196
+
+#header-content-holder
+	position: absolute
+	height: 100%
+	z-index: 3
+
+	nav 
+		height: 95px 
+		// border-bottom: 0.1rem solid #FEF5D9 
+		// box-shadow: 0px 1px 0.5px #F2EADA
+		padding-top: 1%
+		padding-bottom: 1%
+		#logo 
+			height: 100%
+			// background-image: url('../Images/digiboomlogo.png');
+			background-repeat: no-repeat
+			background-position: center left
+			padding-top: 1.4%
+			padding-left: 11%
+			img 
+				margin-top: -4px
+			a 
+				color: #fff
+			#main
+				font-size: 1.2rem
+				padding-left: 4px
+			#sub 
+				font-size: 0.6rem
+				color:#5FCE7C
+				padding-left: 4px
+
+
+
+
+		#menu
+			height: 100%
+			padding-top:2.2%
+
+			a 
+				color: white 
+				font-size: 1.02rem
+
+			#home:hover 
+				color: #5FCE7C
+			#about:hover 
+				color: #5FCE7C
+			#contact
+				margin-top: -5px
+				p
+					padding: 8px 0 8px 0
+					background-color: #5FCE7C 
+					text-align: center
+					border-radius: 3px
+			#contact:hover 
+				opacity: .8
+#contactUsPopUp-map
+	height: 400px 
+	position: relative
+	z-index: 2
+	opacity: 1
+					
+	#map-fader
+		
+		z-index: 10
+		height: 200px
+		width: 200px
+		background: #254196
+
+	
+	
+
+#contactUsPopUp
+	height: 600px
+	position: relative
+	background-color: #fff
+	z-index: 5
+
+	
+
+	// visibility: hidden
+	#contact-heading-float
+		position: absolute
+		height: 400px 
+		color: #fff
+		background: #254196
+		top: -400px
+		opacity: 0.55
+	#contact-heading-float-content
+		position: absolute
+		left: 150px
+		top: -260px
+
+		h3
+			font-size: 3.9rem
+			color: #254196 
+
+		h5
+			font-size: 1.1rem
+			color: #f2f2f2
+			padding-left: 25px 
+
+
+
+	#contactUsPopUp-heading
+		position: relative
+		height: 90px
+		margin-bottom: 6%
+		// border: 1px solid black
+
+		#contactUsPopUp-heading-written
+			text-align: center
+			color: #254196
+			padding: 4.5% 0
+
+		#contactUsPopUp-heading-close-icon
+			position: absolute
+			height: 100%
+			// border: 1px solid black
+			display: none
+			left: 83.33%
+			background-image: url('../Images/cancel (1).png')
+			background-repeat: no-repeat
+			background-position: center
+			cursor: pointer
+
+	#contactUsPopUp-main
+		height: 720px 
+		// border: 1px solid black
+
+		#contactUsPopUp-main-holder
+			height: 100%
+			// border:1px solid black
+			margin-left: 8.33%
+
+			#contactUsPopUp-main-left
+				height: 100%
+				// border:1px solid blue
+
+
+				// #contactUsPopUp-logo
+				// 	height: 270px
+				// 	background-image: url('../Images/logo.png')
+				// 	background-repeat: no-repeat
+				// 	background-size: contain
+				// 	background-position: center
+
+				#contactUsPopUp-address-holder
+					padding: 0% 2%
+					border-right: 2px solid #999 
+					margin-top: 31%
+
+
+					#contactUsPopUp-address-holder-icon
+						height:60px 
+						background-image: url('../Images/placeholder (4).png')
+						background-repeat: no-repeat
+						background-size: contain
+						background-position: center
+						margin-bottom: 8% 
+						margin-top: 0%
+
+
+					#contactUsPopUp-address-holder-content
+						text-align: center
+						margin-bottom:4% 
+						color: #999
+						line-height: 2
+						font-weight: 700
+
+						.address-delhi
+							border-right: 1px solid #999
+
+						.address
+							text-align: center
+							font-size: 14px
+							margin-top: 30px
+
+
+							h3 
+								color: #5FCE7C
+								margin-bottom: 5px
+
+
+
+
+
+			#contactUsPopUp-main-right
+				position: relative
+				#contactUsPopUp-main-right-content-holder
+					position: absolute
+					top: 50px
+					margin-left: 8.33%
+					background-color: #fff
+					// border-left: 1px solid #e4e6f0 
+					// box-shadow: 0px 2px 5px  #e4e6f0;
+
+					#form-holder-heading
+						color: #999
+						font-size: 1.2rem
+						text-align: center
+						padding:8% 0
+					#enquireaboutservices
+						padding-left: 8.33%
+
+						.input-container
+							border:2px solid #999
+							border-radius: 2px
+							margin-bottom: 5%
+						.input-image
+							height: 50px
+							opacity: 1
+						input:focus
+    						outline: none
+						
+
+
+						#name-image
+							background-color: #fff
+							background-image: url('../Images/avatar (5).png')
+							background-position: center
+							background-repeat: no-repeat
+						#email-image
+							background-color: #fff
+							background-image: url('../Images/at (3).png')
+							background-position: center
+							background-repeat: no-repeat
+						#subject-image
+							background-color: #fff
+							background-image: url('../Images/edit (1).png')
+							background-position: center
+							background-repeat: no-repeat
+						#message-image
+							height: 100px
+							background-color: #fff
+							background-image: url('../Images/envelope (7).png')
+							background-position: center
+							background-repeat: no-repeat
+
+						input
+							height: 50px
+							padding-left: 15px 
+							margin-bottom: 0%
+							border-left: 2px solid #999
+						textarea
+							height: 100px 
+							padding: 15px 
+							margin-bottom:0%
+							border-left: 2px solid #999
+
+
+						#submitEnquiryMail
+							height: 50px
+							background-color: #5FCE7C 
+							border: 2px solid #5FCE7C
+							color: #fff
+							letter-spacing: 0.5px
+							font-weight: 700
+							cursor: pointer
+							margin-bottom: 0%
+							margin-left: 41.33%
+							margin-top: 3%
+						
+
+					#submitEnquiryMail:hover
+						opacity: 0.9
+						background-color: #999
+							
+
+
+
+footer
+	background-color: #254196
+	border-top: 1px solid #e4e6f0;
+	#logo-image-container
+		position: relative
+		// border-right:1px solid #c2c2c2
+	#logo-background
+		position: absolute
+		z-index: 20
+		height: 100%
+		background-image: url('../Images/cover-shattered.png')
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		opacity: 0.18
+	#logo-image
+		height: 120px
+		background-image: url('../Images/logoCircle.png')
+		background-repeat: no-repeat
+		background-size: contain
+		background-position: center
+		margin-top: 50px
+		margin-bottom:60px
+		margin-left: 0%
+		border-right:1px dashed #f7f8fc
+		padding-right: 20%
+
+
+	#copyrights
+		text-align: center
+		color: #fff
+		font-size: 1rem
+		padding:2.5% 0 0% 0
+		letter-spacing: 0.9px
+		h4 
+			padding-bottom: 4%
+	#menu-options
+		padding: 4.8% 0 0% 23%
+		text-align: left
+
+		a 
+			text-decoration: none
+			padding-right: 3%
+			font-size: 1.1rem
+			padding-top: 4%
+			color: #fff
+			letter-spacing: 0.7px
+			// border: 1px solid white
+			text-align: center
+		a:nthchild(1)
+			padding-left:2%
+		a:hover
+			color: #5FCE7C
+
+
+	#designedby
+		padding-top: 1%
+		text-align: center
+		color: #999
+		padding-bottom: 1%
+		background-color: #f7f8fc
+		font-size: 1.15rem
+		
+
+		a
+			color : #5FCE7C
+
+
+#facebook
+	position: fixed
+	height: 40px 
+	width: 40px 
+	background-color:  white
+	z-index: 10
+	top: 240px
+	background-image: url("../Images/facebook.png")
+	background-size: contain
+	background-position: center
+	background-repeat: no-repeat
+#googleplus
+	position: fixed
+	height: 40px 
+	width: 40px 
+	background-color:  white
+	z-index: 10
+	top: 285px
+	background-image: url("../Images/linkedin.png")
+	background-size: contain
+	background-position: center
+	background-repeat: no-repeat
+#landscape-mode
+	display: none
+
+@media (max-width:576px)
+
+	#floating-menu
+		transition: all 0.5s
+		position: fixed
+		height: 100vh
+		background-color: #fff
+		text-align: center
+		padding: 30px 7% 20px 7%
+		top: 00px
+		right: -500px
+		z-index: 11
+		opacity: 1
+		background-image: url('../Images/mobile-menu-1.png')
+		background-position: top
+		background-size: cover
+		background-repeat: no-repeat
+		opacity: 1
+		border-left: 1px solid #e4e6f0;
+
+
+		#hide-menu-button
+				height: 35px
+				margin-top: 0px
+				background-image: url('../Images/cancel (2).png')
+				background-position: center
+				background-repeat: no-repeat
+				margin-left: 74%
+		a 
+			padding: 20px 0 20px 0
+			color:  #254196
+			font-size: 1.6rem
+			font-weight: 700
+			// border-bottom: 1px solid #000
+		#home
+			margin-top: 50px
+			
+		#copyrights
+			margin-top: 48%
+			padding-top: 20px
+			border-top: 1px solid 
+			color: #999
+	header
+		height: 120px
+		#header-content-holder	
+			#responsivenav
+				position: relative
+				#logo
+					height: 75px
+					margin-top: 20px
+					background-image: url('../Images/logo-mobile.png')
+					background-position: center
+					background-size: cover
+					background-repeat: no-repeat
+					margin-left: 4%
+				#menu-button
+					height: 75px
+					margin-top: 20px
+					background-image: url('../Images/menu (22).png')
+					background-position: center
+					background-repeat: no-repeat
+					margin-left:37%
+
+	
+	#contactUsPopUp-map
+	height: 400px 
+	position: relative
+	z-index: 2
+	opacity: 1
+					
+	#map-fader
+		
+		z-index: 10
+		height: 200px
+		width: 200px
+		background: #254196
+
+	
+	
+
+	#contactUsPopUp
+		height: 600px
+		// visibility: hidden
+		#contact-heading-float
+			position: absolute
+			height: 400px 
+		#contact-heading-float-content
+			position: absolute
+			left: 90px
+			top: -290px
+	
+			h5
+				display: none
+	
+		#contactUsPopUp-heading
+			position: relative
+			height: 90px
+			margin-bottom: 6%
+			// border: 1px solid black
+
+			#contactUsPopUp-heading-written
+				text-align: center
+				color: #254196
+				padding: 4.5% 0
+
+		#contactUsPopUp-main
+			height: 660px 
+
+			#contactUsPopUp-main-holder
+				height: 100%
+				margin-left: 0%
+
+				#contactUsPopUp-main-left
+					height: 92%
+
+					#contactUsPopUp-address-holder
+						padding: 2% 0%
+						border-right: 1px solid #e4e6f0 
+						margin-top:0
+
+						#contactUsPopUp-address-holder-icon
+							margin-bottom: 8% 
+							margin-top: 18%
+							border-right: 1px solid #e4e6f0 
+				
+
+
+					#contactUsPopUp-address-holder-content
+							text-align: center
+							margin-bottom:4% 
+	
+				#contactUsPopUp-main-right
+
+					position: relative
+					#contactUsPopUp-main-right-content-holder
+						position: relative
+						top: 30px
+						margin-left: 0%
+						background-color: #fff
+						border-top: 1px solid #e4e6f0 
+						box-shadow: 0px 0px 0px  0px #e4e6f0;
+	
+						#form-holder-heading
+							color: #7791AF
+							font-size: 1.2rem
+							text-align: center
+							padding:12% 0
+						#enquireaboutservices
+							padding-left: 7.33%
+
+							.input-image
+								height: 70px
+	
+							input
+								height: 70px
+								padding-left: 15px 
+								margin-bottom: 0%
+								// border: 2px solid #e4e6f0
+							textarea
+								height: 150px 
+							#message-image
+								height: 150px
+	
+							#submitEnquiryMail
+								height: 70px
+								margin-bottom: 10%
+								margin:5% 0
+							#submitEnquiryMailImage
+								margin-left: 21%
+	
+							span 
+								float: left
+								height: 50px
+								padding: 17px 0 0 20px
+	
+						#submitEnquiryMail:hover
+							opacity: 0.9
+						
+	footer
+		background-color: #254196
+		border-top: 1px solid #e4e6f0;
+		position: relative
+		z-index: 50
+		margin-top: 700px
+
+		#logo-image-container
+			border-right:0
+
+		#logo-image
+			margin-top: 30px
+			margin-left: 0
+			margin-bottom: 0
+			border-right:0
+
+		#copyrights
+			font-size: 1rem
+			padding:2.5% 0 0% 0
+
+			h4 
+				padding-bottom: 10%
+		#menu-options
+			padding: 8.5% 0 5% 20.5%
+			text-align: left
+
+			a 
+				padding-right: 3%
+				font-size: 1.1rem
+				padding-top: 4%
+
+		#designedby
+			padding-bottom: 4%
+			padding:4% 10% 4% 10%
+
+			
+	#menu-visible
+		display: none
+	#facebook
+		height: 40px 
+		width: 40px 
+		top: 250px
+	
+	#googleplus
+		height: 40px 
+		width: 40px 
+		top: 295px
+
+@media  (orientation : landscape) and (min-width: 364px) and (max-width: 768px) 
+	header
+		display: none
+	#contactUsPopUp-map
+		display: none
+	#contactUsPopUp
+		display: none
+	#floating-menu
+		display: none
+	#facebook
+		display: none
+	#googleplus
+		display: none
+	footer
+		display: none
+	#landscape-mode
+		display: block
+		#img
+			height: 40vh
+			margin-top: 15vh
+			background-image: url('../Images/smartphone.png')
+			background-position: top
+			background-size: contain
+			background-repeat: no-repeat
+		#content
+			padding: 15vh 10vw
+			text-align: center
+			font-size: 1.1rem
+
+@media (min-width:576px) and (max-width:768px)
+	header
+		height: 120px
+	#header-content-holder
+		#written-content
+			text-align: center
+			padding: 18.5% 0% 2% 0
+
+		nav 
+			padding-top: 2%
+
+		#responsivenav
+			position: relative
+
+			#logo
+				height: 75px
+				margin-top: 20px
+				background-image: url('../Images/logo-mobile.png')
+				background-position: center
+				background-size: cover
+				background-repeat: no-repeat
+				margin-left: 4%
+			#menu-button
+				height: 75px
+				margin-top: 20px
+				background-image: url('../Images/menu (22).png')
+				background-position: center
+				background-repeat: no-repeat
+				margin-left:37%
+
+	
+	#contactUsPopUp-map
+	height: 400px 
+	position: relative
+	z-index: 2
+	opacity: 1
+					
+	#map-fader
+		
+		z-index: 10
+		height: 200px
+		width: 200px
+		background: #254196
+
+	
+	
+
+	#contactUsPopUp
+		height: 600px
+		// visibility: hidden
+		#contact-heading-float
+			position: absolute
+			height: 400px 
+		#contact-heading-float-content
+			position: absolute
+			left: 90px
+			top: -290px
+	
+			h5
+				display: none
+	
+		#contactUsPopUp-heading
+			position: relative
+			height: 90px
+			margin-bottom: 6%
+			// border: 1px solid black
+
+			#contactUsPopUp-heading-written
+				text-align: center
+				color: #254196
+				padding: 4.5% 0
+
+		#contactUsPopUp-main
+			height: 900px 
+
+			#contactUsPopUp-main-holder
+				height: 80%
+				margin-left: 0%
+
+				#contactUsPopUp-main-left
+					height: 100%
+
+					#contactUsPopUp-address-holder
+						padding: 2% 0%
+
+						#contactUsPopUp-address-holder-icon
+							margin-bottom: 8% 
+							margin-top:11%
+
+					#contactUsPopUp-address-holder-content
+							text-align: center
+							margin-bottom:4% 
+	
+				#contactUsPopUp-main-right
+					position: relative
+					height: 900px
+					#contactUsPopUp-main-right-content-holder
+						position: relative
+						height: 900px
+						top: -250px
+						margin-left: 0%
+						background-color: #fff
+						border-top: 1px solid #e4e6f0 
+						box-shadow: 0px 0px 0px  0px #e4e6f0;
+	
+						#form-holder-heading
+							color: #7791AF
+							font-size: 1.2rem
+							text-align: center
+							padding:9% 0 7% 0
+						#enquireaboutservices
+							padding-left: 7.33%
+
+	
+							input
+								height: 50px
+								padding-left: 15px 
+								margin-bottom: 6%
+								border: 2px solid #e4e6f0
+	
+							#submitEnquiryMail
+								margin-bottom: 10%
+								
+							#submitEnquiryMailImage
+								margin-left: 35%
+	
+							span 
+								float: left
+								height: 50px
+								padding: 17px 0 0 20px
+	
+						#submitEnquiryMail:hover
+							opacity: 0.9
+						
+	footer
+		background-color: #254196
+		border-top: 1px solid #e4e6f0;
+		position: relative
+		margin-top: 700px
+
+		#logo-image
+			margin-top: 30px
+
+		#copyrights
+			font-size: 1rem
+			padding:2.5% 0 0% 0
+
+			h4 
+				padding-bottom: 10%
+		#menu-options
+			padding: 8.5% 0 5% 20.5%
+			text-align: left
+
+			a 
+				padding-right: 3%
+				font-size: 1.1rem
+				padding-top: 4%
+
+		#designedby
+			padding-bottom: 4%
+			padding:4% 10% 4% 10%
+	#menu-visible
+		display: none
+	#facebook
+		height: 40px 
+		width: 40px 
+		top: 250px
+	
+	#googleplus
+		height: 40px 
+		width: 40px 
+		top: 295px

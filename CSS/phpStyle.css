@@ -1,0 +1,25 @@
+.send-message {
+	font-size: 1.1rem;
+  	padding-top: 20px;
+  	padding-right: 0%;
+  	/*border: 2px solid black;*/
+  	letter-spacing: 0.4px;
+  	text-align: center;
+  	
+}
+
+.requiredClass{
+	border-color: #F25F5C;
+}
+
+.mailSuccess{
+	color : #5FCE7C;
+}
+.mailFail{
+	color: #F25F5C ;
+}
+
+.inputBlank {
+	border : 2px solid red;
+}
+

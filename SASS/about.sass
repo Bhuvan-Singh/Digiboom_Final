@@ -1,0 +1,721 @@
+//Imports 
+@import gridlayout.sass
+// @import bigscreen_view.sass
+// @import laptop_view.sass
+// @import tablet_view.sass
+// 
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto')
+
+//Keyframe animations 
+// @keyframes mobile-menu-animation
+// 	0%{background-position: bottom;}
+// 	100%{background-position: top;}
+
+
+
+//imports end here 
+
+@keyframes team-animation
+	0% {margin-top:5%; opacity:0 }
+	100%{margin-top: 0%;opacity:1}
+//stylin begins here
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	border: 0 
+a 
+	text-decoration: none
+body 
+	border: 0
+	font-family: 'Montserrat', sans-serif
+	position: relative
+
+
+header
+	height: 480px 
+	// border: 1px solid black
+	position: relative
+
+#header-background
+	position: absolute
+	height: 100%
+	z-index: 3
+	background-color: #254196
+	opacity: 0.88
+#header-graphics
+	position: fixed
+	height: 480px
+	z-index: 4
+	background-image: url('../Images/airplane.png')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	opacity: 0.0
+
+#header-graphics-back
+	position: fixed
+	height: 480px
+	z-index: 2
+	background-image: url('../Images/aboutusone.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	opacity: 1
+
+#header-content-holder
+	position: absolute
+	height: 100%
+	z-index: 5
+
+	nav 
+		height: 80px 
+		padding-top: 1%
+		// border-bottom: 0.1rem solid #FEF5D9 
+		// box-shadow: 0px 1px 0.5px #F2EADA
+		#logo 
+			height: 100%
+			// background-image: url('../Images/digiboomlogo.png');
+			background-repeat: no-repeat
+			background-position: center left
+			padding-top: 1.4%
+			padding-left: 11%
+			img 
+				margin-top: -4px
+			a 
+				color: #fff
+			#main
+				font-size: 1.2rem
+				padding-left: 4px
+			#sub 
+				font-size: 0.6rem
+				color:#5FCE7C
+				padding-left: 4px
+
+
+
+
+		#menu
+			height: 100%
+			padding-top:2.2%
+
+			a 
+				color: white 
+				font-size: 1.02rem
+
+			#home:hover 
+				color: #5FCE7C
+			#about:hover 
+				color: #5FCE7C
+			#contact
+				margin-top: -5px
+				p
+					padding: 8px 0 8px 0
+					background-color: #5FCE7C 
+					text-align: center
+					border-radius: 3px
+			#contact:hover 
+				opacity: .8
+
+	#written-content
+		text-align: center
+		padding: 9.5% 30% 5% 30%
+
+		#main-heading
+			color: #fff
+			font-size: 2.8rem
+			letter-spacing: 0.4px 
+		#sub-heading
+			color:#f1f1f1
+			font-size: 1.5rem
+			letter-spacing: 0.4px 
+
+#about-us-holder
+	text-align: center
+	padding-bottom: 0%
+	position: relative
+	background-color: #fff
+	z-index: 6
+
+	#about-us-heading
+		padding: 8% 0 0% 0
+		color: #2F303D
+
+	#about-us-content
+		padding: 0 20% 5% 20%
+		color: #999
+		line-height: 1.9
+		word-spacing: 0.5px 
+		letter-spacing: 0.8px 
+		text-align: left
+
+		.subheading-aboutus
+			text-align: center
+
+
+		p 
+			margin-bottom: 7%
+
+#monetize
+	height:600px
+	background-color: #f7f8fc
+	border-top: 0px solid #e4e6f0
+	position: relative
+	z-index: 6
+
+	#monetize-heading
+		padding: 5% 0 5.5% 0
+		color : #2F303D
+
+	// #monetize-image
+	// 	height: 650px 
+	// 	margin-left: 8.33%
+	// 	background-image: url('../Images/monetize.png')
+	// 	background-position: center
+	// 	background-size: contain
+	// 	background-repeat: no-repeat
+
+	#monetize-blocks
+		// border:1px solid black
+		margin-left:4.33%
+
+		.monetize-block-class
+			height: 180px
+			// border:1px dashed black
+
+			.monetize-block-content
+				height:100%
+				// border:1px solid green
+				padding: 0% 10% 0 10%
+				text-align: center
+				line-height: 1.8
+				color: #999
+				letter-spacing: 0.9px
+				font-size: 0.95rem
+
+				h2
+					color: #2F303D
+					margin-bottom: 5px
+					font-size: 1.2rem
+			.monetize-block-content-one
+				padding-top: 1.6%
+				padding: 1.6% 15% 0 10%
+
+			.monetize-block-content-two
+				padding-top: 1.6%
+
+			.monetize-block-content-three
+				padding-top:1.6%
+
+
+			.monetixe-block-image
+				height: 100%
+				// border:1px solid blue
+				opacity: 0.8
+
+			#monetize-image-one
+				background-image: url('../Images/money-bag.png')
+				background-position: center
+				background-repeat: no-repeat
+				// background-size: contain
+			#monetize-image-two
+				background-image: url('../Images/line-chart.png')
+				background-position: center
+				background-repeat: no-repeat
+			#monetize-image-three
+				background-image: url('../Images/audience.png')
+				background-position: center
+				background-repeat: no-repeat
+#our-team
+	// border:1px solid black
+	position: relative
+	z-index: 25
+	padding: 8% 0 12% 0
+	background-color: #f7f8fc
+
+	#our-team-tile-container
+		// border:1px solid black
+
+	#our-team-heading
+		padding: 0% 0 8% 0
+		font-size: 1.3rem
+		color: #2F303D
+
+	.team-member
+		// animation: team-animation 0.5s linear forwards 
+		margin-top:5%
+		opacity: 0
+		// border:1px solid black
+
+
+
+	#team-member-one
+		margin-left: 17%
+
+	#team-member-two
+		margin-left: 15%
+		animation-delay: 0.2s
+
+	
+	.team-member-image
+		height: 150px
+		border-right: 8px solid #FF7F85
+	.team-member-info
+		height: 150px
+		text-align: left
+		padding: 0.3% 0 0 6%
+		line-height: 1.5
+		letter-spacing: 0.6px
+		color: #999
+		font-size: 0.8rem
+		// border-right: 1px solid #FF7F85
+	.member-name
+		font-size: 1.1rem
+		font-weight: 700
+		color: #2F303D
+	#team-member-image-one
+		background-image: url('../Images/boss.png')
+		background-position: center
+		background-repeat: no-repeat
+		background-color:#FFD47E 
+
+	#team-member-image-two
+		background-image: url('../Images/student.png')
+		background-position: center
+		background-repeat: no-repeat
+		background-color:#8FB8DE 
+	#team-member-info-two
+		padding:  1.3% 0 0 6%
+
+
+		
+
+
+footer
+	background-color: #254196
+	border-top: 1px solid #e4e6f0;
+	#logo-image-container
+		position: relative
+		// border-right:1px solid #c2c2c2
+	#logo-background
+		position: absolute
+		z-index: 20
+		height: 100%
+		background-image: url('../Images/cover-shattered.png')
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		opacity: 0.18
+	#logo-image
+		height: 120px
+		background-image: url('../Images/logoCircle.png')
+		background-repeat: no-repeat
+		background-size: contain
+		background-position: center
+		margin-top: 50px
+		margin-bottom:60px
+		margin-left: 0%
+		border-right:1px dashed #f7f8fc
+		padding-right: 20%
+
+
+	#copyrights
+		text-align: center
+		color: #fff
+		font-size: 1rem
+		padding:2.5% 0 0% 0
+		letter-spacing: 0.9px
+		h4 
+			padding-bottom: 4%
+	#menu-options
+		padding: 4.8% 0 0% 23%
+		text-align: left
+
+		a 
+			text-decoration: none
+			padding-right: 3%
+			font-size: 1.1rem
+			padding-top: 4%
+			color: #fff
+			letter-spacing: 0.7px
+			// border: 1px solid white
+			text-align: center
+		a:nthchild(1)
+			padding-left:2%
+		a:hover
+			color: #5FCE7C
+
+
+	#designedby
+		padding-top: 1%
+		text-align: center
+		color: #999
+		padding-bottom: 1%
+		background-color: #f7f8fc
+		font-size: 1.15rem
+		
+
+		a
+			color : #5FCE7C
+
+
+
+
+
+// Floating social media 
+
+
+#facebook
+	position: fixed
+	height: 40px 
+	width: 40px 
+	background-color:  white
+	z-index: 10
+	top: 240px
+	background-image: url("../Images/facebook.png")
+	background-size: contain
+	background-position: center
+	background-repeat: no-repeat
+#googleplus
+	position: fixed
+	height: 40px 
+	width: 40px 
+	background-color:  white
+	z-index: 10
+	top: 285px
+	background-image: url("../Images/linkedin.png")
+	background-size: contain
+	background-position: center
+	background-repeat: no-repeat
+
+
+#landscape-mode
+	display: none
+
+// mobile view
+@media (max-width:576px)
+	#header-graphics
+		position: absolute
+	
+	#header-graphics-back
+		position: absolute
+	
+	#header-content-holder
+		#written-content
+			text-align: center
+			padding: 18.5% 0% 2% 0%
+
+		#responsivenav
+			position: relative
+
+			#logo
+				height: 80px
+				margin-top: 20px
+				background-image: url('../Images/logo-mobile.png')
+				background-position: center
+				background-size: cover
+				background-repeat: no-repeat
+				margin-left:4%
+			#menu-button
+				height: 75px
+				margin-top: 20px
+				background-image: url('../Images/menu (22).png')
+				background-position: center
+				background-repeat: no-repeat
+				margin-left: 37%
+	 
+
+	#floating-menu
+		transition: all 0.5s
+		position: fixed
+		height: 100vh
+		background-color: #fff
+		text-align: center
+		padding: 30px 7% 20px 7%
+		top: 00px
+		right: -500px
+		z-index: 11
+		opacity: 1
+		background-image: url('../Images/mobile-menu-1.png')
+		background-position: top
+		background-size: cover
+		background-repeat: no-repeat
+		opacity: 1
+		border-left: 1px solid #e4e6f0;
+
+
+		#hide-menu-button
+				height: 35px
+				margin-top: 0px
+				background-image: url('../Images/cancel (2).png')
+				background-position: center
+				background-repeat: no-repeat
+				margin-left: 74%
+		a 
+			padding: 20px 0 20px 0
+			color:  #254196
+			font-size: 1.6rem
+			font-weight: 700
+			// border-bottom: 1px solid #000
+		#home
+			margin-top: 50px
+			
+		#copyrights
+			margin-top: 48%
+			padding-top: 20px
+			border-top: 1px solid 
+			color: #999
+
+	#about-us-holder
+		text-align: center
+		padding-bottom: 0%
+
+		#about-us-heading
+			padding: 15% 0 3% 0
+	
+		#about-us-content
+			padding: 0% 2% 5% 6%
+				
+			p 
+				margin-bottom: 10%
+
+
+		#monetize
+			height:800px
+			background-color: #f7f8fc
+			// border-top: 1px solid #e4e6f0;
+			position: relative
+			z-index: 6
+
+			#monetize-heading
+				padding: 12% 0 10.5% 0
+				color : #2F303D
+
+			#monetize-blocks
+				// border:1px solid black
+				margin-left:4.17%
+
+
+			.monetize-block-class
+				height: 180px
+				// border:1px dashed black
+				margin-bottom: 45px
+	
+				.monetize-block-content
+					height:100%
+					// border:1px solid green
+					padding: 9% 1% 0 12%
+					text-align: justify
+					line-height: 1.5
+					color: #999
+					letter-spacing: 0.5px
+					font-size: 0.72rem
+
+					h2
+						color: #2F303D
+						font-size: 1.2rem
+						margin-bottom: 5px
+				.monetize-block-content-one
+					padding-top: 17.2%
+				.monetize-block-content-two
+					padding-top: 10.9%
+					text-align: justify
+
+				.monetize-block-content-three
+					padding-top: 9.9%
+	
+
+				.monetixe-block-image
+					height: 100%
+					// border:1px solid blue
+					opacity: 0.8
+
+				#monetize-image-one
+					background-image: url('../Images/money-bag.png')
+					background-position: center
+					background-repeat: no-repeat
+					background-size: contain
+				#monetize-image-two
+					background-image: url('../Images/stats.png')
+					background-position: center
+					background-repeat: no-repeat
+					background-size: contain
+				#monetize-image-three
+					background-image: url('../Images/audience.png')
+					background-position: center
+					background-repeat: no-repeat
+					background-size: contain
+		#our-team
+			padding: 19% 0 25% 0
+	
+			#our-team-heading
+				padding: 0% 0 18% 0
+				font-size: 1.3rem
+				color: #2F303D
+
+			#team-member-one
+				margin-left: 4.17%
+				margin-bottom: 20%
+			#team-member-two
+				margin-left: 4.17%
+
+
+	footer
+		background-color: #254196
+		border-top: 1px solid #e4e6f0;
+
+		#logo-image-container
+			border-right:0
+
+		#logo-image
+			margin-top: 30px
+			margin-left: 0
+			margin-bottom: 0
+			border-right:0
+
+		#copyrights
+			font-size: 1rem
+			padding:2.5% 0 0% 0
+
+			h4 
+				padding-bottom: 10%
+		#menu-options
+			padding: 8.5% 0 5% 20.5%
+			text-align: left
+
+			a 
+				padding-right: 3%
+				font-size: 1.1rem
+				padding-top: 4%
+
+		#designedby
+			padding-bottom: 4%
+			padding:4% 10% 4% 10%
+	#menu-visible
+		display: none
+	#facebook
+		height: 40px 
+		width: 40px 
+		top: 250px
+	
+	#googleplus
+		height: 40px 
+		width: 40px 
+		top: 295px
+@media  (orientation : landscape) and (min-width: 364px) and (max-width: 768px) 
+	header
+		display: none
+	#about-us-holder
+		display: none
+	#inquire-form
+		display: none
+	#floating-menu
+		display: none
+	#facebook
+		display: none
+	#googleplus
+		display: none
+
+	footer
+		display: none
+	#landscape-mode
+		display: block
+		#img
+			height: 40vh
+			margin-top: 15vh
+			background-image: url('../Images/smartphone.png')
+			background-position: top
+			background-size: contain
+			background-repeat: no-repeat
+		#content
+			padding: 15vh 10vw
+			text-align: center
+			font-size: 1.1rem
+
+@media (min-width:576px) and (max-width:768px)
+	#header-graphics
+		position: absolute
+	
+	#header-graphics-back
+		position: absolute
+	
+	#header-content-holder
+		#written-content
+			text-align: center
+			padding: 14.5% 0% 2% 0%
+
+		nav
+			height: 80px 
+			padding-top: 1%
+	 
+
+	#about-us-holder
+		text-align: center
+		padding-bottom: 0%
+
+		#about-us-heading
+			padding: 15% 0 3% 0
+	
+		#about-us-content
+			padding: 7% 10% 5% 10%
+				
+			p 
+				margin-bottom: 10%
+
+
+	#monetize
+		height: 890px
+	
+		#monetize-heading
+			padding: 11% 0 10.5% 0
+			color : #2F303D
+		#monetize-blocks
+			div
+				background-color: #fff
+				border: 1px solid #e4e6f0;
+				margin-left: 8.33%
+				padding: 10%
+				margin-bottom: 50px
+				color: #999
+				font-size: 13px
+				line-height: 1.4
+				word-spacing: 0.5px 
+				letter-spacing: 0.8px
+
+	footer
+		background-color: #254196
+		border-top: 1px solid #e4e6f0;
+
+		#logo-image
+			margin-top: 30px
+
+		#copyrights
+			font-size: 1rem
+			padding:2.5% 0 0% 0
+
+			h4 
+				padding-bottom: 10%
+		#menu-options
+			padding: 8.5% 0 5% 20.5%
+			text-align: left
+
+			a 
+				padding-right: 3%
+				font-size: 1.1rem
+				padding-top: 4%
+				// border: 1px solid white
+
+		#designedby
+			padding-bottom: 4%
+			padding:4% 10% 4% 10%
+	#menu-visible
+		display: none
+	#facebook
+		height: 40px 
+		width: 40px 
+		top: 250px
+	
+	#googleplus
+		height: 40px 
+		width: 40px 
+		top: 295px
